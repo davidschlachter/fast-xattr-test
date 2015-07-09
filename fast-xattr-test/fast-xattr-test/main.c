@@ -15,17 +15,16 @@
 int main(int argc, const char * argv[]) {
     //char a[80];
     //strcpy(a, argv[2]);
-    const char *path = argv[1];
+    const char *path = argv[2];
     
     //char b[32];
     //strcpy(b, argv[1]);
-    const char *name = argv[2];
+    const char *name = argv[1];
     
     int value[1];
     
     long rval = 0;
     rval = getxattr(path, name, &value, sizeof(value), 0, 0);
-    int c = errno;
     
     if (rval != -1) {
         return 0;
