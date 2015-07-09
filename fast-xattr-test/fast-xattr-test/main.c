@@ -14,11 +14,11 @@
 
 int main(int argc, const char * argv[]) {
     //char a[80];
-    //strcpy(a, argv[1]);
+    //strcpy(a, argv[2]);
     const char *path = argv[1];
     
     //char b[32];
-    //strcpy(b, argv[2]);
+    //strcpy(b, argv[1]);
     const char *name = argv[2];
     
     int value[1];
