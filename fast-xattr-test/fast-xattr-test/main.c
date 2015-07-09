@@ -7,9 +7,25 @@
 //
 
 #include <stdio.h>
+#include <sys/xattr.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    const char *path;
+    const char *name;
+    void *value = malloc(15);
+    size_t size;
+    u_int32_t position;
+    int options = 0;
+    
+    path = argv[1];
+    name = argv[2];
+    size = 14;
+    position = 0;
+    
+    if (!getxattr(path, name, value, size, position, options)) {
+        return 0;
+    } else {
+        return 1;
+    };
 }
