@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>39B8343A-9804-4BD5-A378-3F88E233788B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>fast-xattr-test</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CCEB53EE0A73D2787DAB00956C26BE27D7FE2C99</key>
 		<string>https://github.com/davidschlachter/fast-xattr-test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>fast-xattr-test/fast-xattr-test.xcodeproj/project.xcworkspace</string>
+	<string>fast-xattr-test/fast-xattr-test.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CCEB53EE0A73D2787DAB00956C26BE27D7FE2C99</key>
