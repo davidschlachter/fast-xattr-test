@@ -30,3 +30,8 @@
 
 # Debug files
 *.dSYM/
+
+# Xcode Files
+.DS_Store
+UserInterfaceState.xcuserstate
+xcuserdata/
