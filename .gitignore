@@ -34,4 +34,4 @@
 # Xcode Files
 .DS_Store
 UserInterfaceState.xcuserstate
-fast-xattr-test/fast-xattr-test.xcodeproj/xcuserdata 
+fast-xattr-test/fast-xattr-test.xcodeproj/xcuserdata/*
