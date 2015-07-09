@@ -9,21 +9,25 @@
 #include <stdio.h>
 #include <sys/xattr.h>
 #include <stdlib.h>
+#include <string.h>
+#include <errno.h>
 
 int main(int argc, const char * argv[]) {
-    const char *path;
-    const char *name;
-    void *value = malloc(15);
-    size_t size;
-    u_int32_t position;
-    int options = 0;
+    //char a[80];
+    //strcpy(a, argv[1]);
+    const char *path = argv[1];
     
-    path = argv[1];
-    name = argv[2];
-    size = 14;
-    position = 0;
+    //char b[32];
+    //strcpy(b, argv[2]);
+    const char *name = argv[2];
     
-    if (!getxattr(path, name, value, size, position, options)) {
+    int value[1];
+    
+    long rval = 0;
+    rval = getxattr(path, name, &value, sizeof(value), 0, 0);
+    int c = errno;
+    
+    if (rval != -1) {
         return 0;
     } else {
         return 1;
